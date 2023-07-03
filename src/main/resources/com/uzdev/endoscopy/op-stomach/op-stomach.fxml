@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.uzdev.endoscopy.op_stomach.OpStomachController">
+
+    <HBox spacing="8.0">
+
+    <VBox spacing="8.0">
+        <Button text="Oshqozon Operatsiyadan keyin"  fx:id="btnMainOpStomach" onMouseEntered="#onShowFullNameOFMainBtn"
+                onMouseExited="#onHideFullNameOFMainBtn" prefWidth="100.0" onAction="#onStomachBtnClick">
+            <VBox.margin >
+                <Insets>
+                    <top >20</top>
+                </Insets>
+            </VBox.margin>
+        </Button>
+        <Button text="O'tkazuvchanlik" prefWidth="100.0" visible="false" fx:id="btnFlowOfStomach"
+                onAction="#onStomachFlowBtnClick"/>
+        <Button text="Oshqozonda nima borligi" prefWidth="100.0" visible="false"
+                fx:id="btnWhatHasInStomach"
+                onMouseEntered="#onShowFullNameOFBtn"
+                onMouseExited="#onHideFullNameOFBtn"
+                onAction="#onStomachWhatHasInBtnClick"/>
+        <Button text="Shilliq qavat" visible="false" prefWidth="100.0" fx:id="btnMucosaOfStomach"
+                onAction="#onStomachMucosaBtnClick"/>
+        <Button text="Patalogiya" visible="false" prefWidth="100.0" fx:id="btnPathologyOfStomach"
+                onAction="#onStomachPathologyBtnClick"/>
+    </VBox>
+    <fx:include source="op-stomach-subitem.fxml" fx:id="subItem" visible="false"/>
+</HBox>
+
+
+</AnchorPane>

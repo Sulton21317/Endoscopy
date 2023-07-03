@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox spacing="8.0" fx:id="nimaBorligi" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.uzdev.endoscopy.esophagus.EsophagusSubItemController" prefWidth="120.0">
+        <HBox spacing="8.0"  prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>20</left>
+                </Insets>
+            </VBox.margin>
+            <CheckBox text="I. Shilliq (O’rta)" prefHeight="20.0" textAlignment="CENTER"/>
+        </HBox>
+        <HBox spacing="8.0"  prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>20</left>
+                </Insets>
+            </VBox.margin>
+            <CheckBox text="II. Shilliq (Ko’p) " textFill="black" prefHeight="20.0"  textAlignment="CENTER"/>
+        </HBox>
+        <HBox spacing="8.0"  prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>20</left>
+                </Insets>
+            </VBox.margin>
+            <CheckBox text="III. Shilliq (O’t suyuqligi aralashgan) " prefHeight="20.0"  textAlignment="CENTER"/>
+        </HBox>
+        <HBox spacing="8.0"  prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>20</left>
+                </Insets>
+            </VBox.margin>
+            <CheckBox text="IV. Qonli shilliq" prefHeight="20.0"  textAlignment="CENTER"/>
+        </HBox>
+
+    </VBox>

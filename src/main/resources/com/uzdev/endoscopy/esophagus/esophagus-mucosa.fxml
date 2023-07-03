@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.uzdev.endoscopy.esophagus.EsophagusSubItemController" >
+
+
+        <VBox spacing="8.0" fx:id="shilliqQavat" >
+            <HBox spacing="8.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>20</left>
+                    </Insets>
+                </VBox.margin>
+                <CheckBox text="I. Pushti" prefHeight="20.0" textAlignment="CENTER"/>
+            </HBox>
+            <HBox spacing="8.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>20</left>
+                    </Insets>
+                </VBox.margin>
+                <CheckBox text="II. Gipermiya" textFill="black" prefHeight="20.0" textAlignment="CENTER"/>
+            </HBox>
+            <HBox spacing="8.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>20</left>
+                    </Insets>
+                </VBox.margin>
+                <CheckBox text="III. Atrofiya " prefHeight="20.0" textAlignment="CENTER"/>
+            </HBox>
+            <HBox spacing="8.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>20</left>
+                    </Insets>
+                </VBox.margin>
+                <CheckBox text="IV. Eroziyali (Chirish)" prefHeight="20.0" textAlignment="CENTER"/>
+            </HBox>
+            <HBox spacing="8.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>20</left>
+                    </Insets>
+                </VBox.margin>
+                <CheckBox text="V. Eroziya va yarali" prefHeight="20.0" textAlignment="CENTER"/>
+            </HBox>
+        </VBox>
+</AnchorPane>

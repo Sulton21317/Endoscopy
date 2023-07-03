@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.uzdev.endoscopy.esophagus.EsophagusController" style="-fx-background-color: #F6C391;">
+
+    <VBox spacing="12.0">
+        <Button text="Qizilo'ngach" prefWidth="100.0" onAction="#onEsophagusButtonClick"/>
+        <Button text="O'tkazuvchanlik" prefWidth="100.0" fx:id="btnFlowOfEsophagus"
+                onAction="#onFlowOfEsophagus"/>
+        <fx:include source="esophagus-flowitems.fxml" fx:id="flowSubItems"/>
+
+
+        <Button text="Qizil o'ngachda nima borligi" prefWidth="100.0"
+                fx:id="btnWhatHasInEsophagus"
+                onAction="#onWhatHasInEsophagus"
+                onMouseEntered="#onShowFullNameOFBtn"
+                onMouseExited="#onHideFullNameOFBtn"/>
+        <fx:include source="esophagus-whathasitem.fxml" fx:id="whatHasSubItems"/>
+
+        <Button text="Shilliq qavat" prefWidth="100.0" fx:id="btnMucosa" onAction="#onMucosa"/>
+        <fx:include source="esophagus-mucosa.fxml" fx:id="mucosaSubItems" prefHeight="0.0"/>
+
+
+        <Button text="Patalogiya" prefWidth="100.0" fx:id="btnPathology" onAction="#onPathology"/>
+        <fx:include source="esophagus-pathalogy.fxml" fx:id="pathologyItems" prefHeight="0.0"/>
+
+
+        <Button text="Saqlash" onAction="#saveAction" textAlignment="CENTER"  alignment="CENTER" prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <bottom>30</bottom>
+                </Insets>
+
+            </VBox.margin>
+        </Button>
+    </VBox>
+
+
+</AnchorPane>
+

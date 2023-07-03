@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.TextFieldListCell?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="8.0" fx:id="pathology" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.uzdev.endoscopy.esophagus.EsophagusSubItemController">
+    <VBox.margin>
+        <Insets>
+            <bottom>30</bottom>
+        </Insets>
+    </VBox.margin>
+    <VBox spacing="4.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+        <Button text="I. Yara" prefHeight="20.0" prefWidth="175" alignment="BASELINE_LEFT"/>
+
+        <VBox prefWidth="200" spacing="8.0">
+
+
+            <HBox spacing="8.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>100</left>
+                    </Insets>
+                </VBox.margin>
+                <Label text="I. O'lchami " textFill="black" prefHeight="20.0" prefWidth="100"
+                       alignment="BASELINE_LEFT"/>
+                <TextField prefHeight="20.0" prefWidth="100.0"/>
+            </HBox>
+
+            <HBox spacing="8.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>100</left>
+                    </Insets>
+                </VBox.margin>
+                <Label text="II. Soni " textFill="black" prefHeight="20.0" prefWidth="100" alignment="BASELINE_LEFT"/>
+                <TextField prefHeight="20.0" prefWidth="100.0"/>
+            </HBox>
+
+            <VBox spacing="8.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>100</left>
+                    </Insets>
+                </VBox.margin>
+
+                <Label text="III. Qon ketish " textFill="black" prefHeight="20.0" prefWidth="200"
+                       alignment="BASELINE_LEFT"/>
+                <RadioButton text="1.a">
+                    <VBox.margin>
+                        <Insets>
+                            <left>50</left>
+                        </Insets>
+                    </VBox.margin>
+                </RadioButton>
+
+                <RadioButton text="1.b">
+                    <VBox.margin>
+                        <Insets>
+                            <left>50</left>
+                        </Insets>
+                    </VBox.margin>
+                </RadioButton>
+                <RadioButton text="2.a">
+                    <VBox.margin>
+                        <Insets>
+                            <left>50</left>
+                        </Insets>
+                    </VBox.margin>
+                </RadioButton>
+
+                <RadioButton text="2.b">
+                    <VBox.margin>
+                        <Insets>
+                            <left>50</left>
+                        </Insets>
+                    </VBox.margin>
+                </RadioButton>
+
+                <RadioButton text="2.c">
+                    <VBox.margin>
+                        <Insets>
+                            <left>50</left>
+                        </Insets>
+                    </VBox.margin>
+                </RadioButton>
+            </VBox>
+
+
+        </VBox>
+    </VBox>
+
+
+    <VBox spacing="8.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+        <Button text="II. Diventikul (Teshik, Cho'ntak" prefHeight="20.0" prefWidth="175.0" alignment="BASELINE_LEFT"/>
+
+    </VBox>
+
+    <VBox spacing="8.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+        <Button text="III. Chandiq strukturasi" prefHeight="20.0" prefWidth="175.0" alignment="BASELINE_LEFT"/>
+        <VBox spacing="8.0">
+            <CheckBox text="Konpensatsiya" textAlignment="CENTER">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </CheckBox>
+            <CheckBox text=" Sub konpensatisya (to’liq emas)" textAlignment="CENTER">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </CheckBox>
+
+            <CheckBox text="Dekonpensatsiya (berk)" textAlignment="CENTER">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </CheckBox>
+        </VBox>
+
+    </VBox>
+    <VBox spacing="8.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+        <Button text="IV. Varikoz" prefHeight="20.0" prefWidth="175.0" alignment="BASELINE_LEFT"/>
+        <HBox spacing="8.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+            <Label text=" Joylashgan joyi " textFill="black" prefHeight="20.0" prefWidth="100"
+                   alignment="BASELINE_LEFT"/>
+            <TextField prefHeight="20.0" prefWidth="100.0"/>
+        </HBox>
+
+        <CheckBox text="Yuqori 1/3" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+        </CheckBox>
+        <CheckBox text="O'rta 1/3" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+        </CheckBox>
+        <CheckBox text="Pastki 1/3" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+        </CheckBox>
+
+        <HBox spacing="8.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+            <Label text="Soni " textFill="black" prefHeight="20.0" prefWidth="100"
+                   alignment="BASELINE_LEFT"/>
+            <TextField prefHeight="20.0" prefWidth="100.0"/>
+        </HBox>
+
+
+        <HBox spacing="8.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+            <Label text="Diamteri " textFill="black" prefHeight="20.0" prefWidth="100"
+                   alignment="BASELINE_LEFT"/>
+            <TextField prefHeight="20.0" prefWidth="100.0"/>
+        </HBox>
+
+    </VBox>
+
+
+    <VBox spacing="8.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+        <Button text="V. Mel. Ves sindromi" prefHeight="20.0" prefWidth="175.0" alignment="BASELINE_LEFT"/>
+
+        <HBox spacing="8.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+            <Label text=" Uzunligi " textFill="black" prefHeight="20.0" prefWidth="100"
+                   alignment="BASELINE_LEFT"/>
+            <TextField prefHeight="20.0" prefWidth="100.0"/>
+        </HBox>
+
+        <RadioButton text="Qonli" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+        </RadioButton>
+        <RadioButton text="Qonsiz" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+        </RadioButton>
+
+    </VBox>
+    <VBox spacing="8.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+        <Button text="VI. Zamburug’li" prefHeight="20.0" prefWidth="175.0" alignment="BASELINE_LEFT"/>
+        <HBox spacing="8.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+            <Label text=" Kategoriya " textFill="black" prefHeight="20.0" prefWidth="100"
+                   alignment="BASELINE_LEFT"/>
+            <TextFieldListCell text="1" prefHeight="20.0" prefWidth="100.0"/>
+        </HBox>
+
+
+    </VBox>
+    <VBox spacing="8.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+
+
+        <Button text="VII. O’smalar" prefHeight="20.0" prefWidth="175.0" alignment="BASELINE_LEFT"/>
+        <VBox spacing="8.0">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+            <Label text="1. O'sish turi" prefHeight="20.0" prefWidth="100"/>
+
+            <RadioButton text="Egzofit">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </RadioButton>
+            <RadioButton text="Infintativ">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </RadioButton>
+            <RadioButton text="Aralash">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </RadioButton>
+            <HBox spacing="8.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+                <Label text=" O'sma uzunligi " textFill="black" prefHeight="20.0" prefWidth="100"
+                       alignment="BASELINE_LEFT"/>
+                <TextField text="1" prefHeight="20.0" prefWidth="100.0"/>
+            </HBox>
+
+            <Label text="2. Polip" prefHeight="20.0" prefWidth="100"/>
+
+            <HBox spacing="8.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+                <Label text="Soni " textFill="black" prefHeight="20.0" prefWidth="100"
+                       alignment="BASELINE_LEFT"/>
+                <TextField text="1" prefHeight="20.0" prefWidth="100.0"/>
+            </HBox>
+
+            <HBox spacing="8.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+                <Label text="Uzunligi " textFill="black" prefHeight="20.0" prefWidth="100"
+                       alignment="BASELINE_LEFT"/>
+                <TextField text="1" prefHeight="20.0" prefWidth="100.0"/>
+            </HBox>
+
+            <HBox spacing="8.0" prefWidth="200.0">
+
+                <Label text="3. Shilliq osti hosila " textFill="black" prefHeight="20.0" prefWidth="100"
+                       alignment="BASELINE_LEFT"/>
+                <TextField text="1" prefHeight="20.0" prefWidth="100.0"/>
+            </HBox>
+
+        </VBox>
+
+    </VBox>
+    <VBox spacing="8.0" prefWidth="400.0">
+        <VBox.margin>
+            <Insets>
+                <left>20</left>
+            </Insets>
+        </VBox.margin>
+        <Button text="VIII. Kordiya" prefHeight="20.0" prefWidth="175.0" alignment="BASELINE_LEFT"/>
+        <VBox spacing="8.0">
+            <VBox.margin>
+                <Insets>
+                    <left>50</left>
+                </Insets>
+            </VBox.margin>
+            <CheckBox text="1. Grija" textAlignment="CENTER"/>
+
+            <RadioButton text="Fiksi">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </RadioButton>
+            <RadioButton text="Skol">
+                <VBox.margin>
+                    <Insets>
+                        <left>50</left>
+                    </Insets>
+                </VBox.margin>
+            </RadioButton>
+
+            <CheckBox text="2. Axlaziya" textAlignment="CENTER"/>
+            <CheckBox text="3. Xalaziya" textAlignment="CENTER"/>
+            <CheckBox text="4. Norma" textAlignment="CENTER"/>
+        </VBox>
+
+
+    </VBox>
+
+</VBox>

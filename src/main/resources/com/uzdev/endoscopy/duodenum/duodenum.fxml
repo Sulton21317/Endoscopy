@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.uzdev.endoscopy.duodenum.DuodenumController"
+>
+
+    <HBox spacing="8.0">
+        <VBox spacing="8.0">
+            <Button text="12 Barmoqli ichak" fx:id="btnMainDuodenum" prefWidth="100.0" onAction="#onDuodenumBtnClick"
+                    onMouseEntered="#onShowFullNameOFMainBtn" onMouseExited="#onHideFullNameOFMainBtn">
+                <VBox.margin >
+                    <Insets>
+                        <top >20</top>
+                    </Insets>
+                </VBox.margin>
+            </Button>
+            <Button text="O'tkazuvchanlik" prefWidth="100.0" visible="false" fx:id="btnFlowOfDuodenum"
+                    onAction="#onDuodenumFlowBtnClick"/>
+            <Button text="12 Barmoqli ichakda nima borligi" prefWidth="100.0" visible="false"
+                    fx:id="btnWhatHasInDuodenum"
+                    onMouseEntered="#onShowFullNameOFBtn"
+                    onMouseExited="#onHideFullNameOFBtn"
+                    onAction="#onDuodenumWhatHasInBtnClick"/>
+            <Button text="Shilliq qavat" visible="false" prefWidth="100.0" fx:id="btnMucosaOfDuodenum"
+                    onAction="#onDuodenumMucosaBtnClick"/>
+            <Button text="Patalogiya" visible="false" prefWidth="100.0" fx:id="btnPathologyOfDuodenum"
+                    onAction="#onDuodenumPathologyBtnClick"/>
+        </VBox>
+
+        <fx:include source="duodenum-subitem.fxml" visible="false" fx:id="subItem"/>
+    </HBox>
+
+
+</AnchorPane>

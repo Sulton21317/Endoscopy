@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.uzdev.endoscopy.MainController" prefWidth="-Infinity">
+
+    <MenuBar fx:id="menuBar" onKeyPressed="#handleKeyInput">
+        <Menu text="Fayl">
+            <MenuItem text="Tozalash"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Chiqish" onAction="#onExit"/>
+        </Menu>
+
+        <Menu text="Yordam">
+            <MenuItem text="Qidirish"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Dastur haqida" onAction="#handleAboutAction"/>
+        </Menu>
+    </MenuBar>
+    <ScrollPane >
+
+        <VBox  alignment="TOP_CENTER"  >
+
+
+
+            <HBox spacing="20.0" alignment="TOP_CENTER"  >
+                <fx:include source="esophagus/esophagus.fxml"/>
+                <fx:include source="stomach/stomach.fxml"/>
+                <fx:include source="op-stomach/op-stomach.fxml"/>
+                <fx:include source="duodenum/duodenum.fxml"/>
+            </HBox>
+
+            <TextField text="Bu test so'z" alignment="TOP_CENTER" minWidth="1200" minHeight="600"/>
+
+        </VBox>
+    </ScrollPane>
+
+
+
+
+</VBox>
